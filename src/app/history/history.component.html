@@ -1,0 +1,61 @@
+<div>
+  <h2>Sent iteams</h2>
+<div class="container mt-0">
+  <div class="row">
+    <div class="col-sm-8">
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>mobileNumber</th>
+          <th>time</th>
+          <th>OTP</th>
+        </tr>
+        <tr *ngFor="let item of listDataHeader">
+               <td>{{item.FirstName}}</td>
+               <td>{{item.LastName}}</td>
+               <td>{{item.mobileNumber}}</td>
+               <td>{{item.createdAt* 1000 | date:'yyyy-MM-dd HH:mm:ss Z'}}</td>
+               <td>{{item.otp}}</td>
+             </tr>
+            <!-- <td>{{contentlist.comment}</t
+       <!-<ng-template [*ngFor]="let x in ContactData"> -->
+          <!-- <tr for="let x in ContactData;let i=index">
+              <th>{{x.FirstName}}</th>
+              <th>{{x.LastName}}</th>
+              <th><button type="button">Profile</button></th>
+            </tr> -->
+       <!-- </ng-template> -->
+        <!-- <tr >
+          <th>{{ContactData[0].FirstName}}</th>
+          <th>{{ContactData[0].LastName}}</th>
+          <th><button type="button" (click)="Send('0')">Profile</button></th>
+        </tr>
+        <tr>
+          <th>{{ContactData[1].FirstName}}</th>
+          <th>{{ContactData[1].LastName}}</th>
+          <th><button type="button" (click)="Send('1')">Profile</button></th>
+        </tr>
+        <tr>
+          <th>{{ContactData[2].FirstName}}</th>
+          <th>{{ContactData[2].LastName}}</th>
+          <th><button type="button" (click)="Send('2')">Profile</button></th>
+        </tr>
+        <tr>
+          <th>{{ContactData[3].FirstName}}</th>
+          <th>{{ContactData[3].LastName}}</th>
+          <th><button type="button" (click)="Send('3')">Profile</button></th>
+        </tr>
+        <tr>
+          <th>{{ContactData[4].FirstName}}</th>
+          <th>{{ContactData[4].LastName}}</th>
+          <th><button type="button" (click)="Send('4')">Profile</button></th>
+        </tr> -->
+      </table>
+
+    </div>
+  </div>
+</div>
+
+
+</div>
